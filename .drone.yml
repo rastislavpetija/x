@@ -1,0 +1,19 @@
+kind: pipeline
+type: docker
+name: my-first-build
+
+steps:
+  - name: build
+    image: alpine
+    commands:
+      - echo "build step executed"
+
+  - name: test
+    image: alpine
+    commands:
+      - echo "test step executed"
+
+  - name: deploy
+    image: alpine
+    commands:
+      - echo "deploy step executed"
